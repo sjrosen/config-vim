@@ -8,3 +8,5 @@
 !/.vimrc
 !/.gitignore.d
 !/.gitignore.d/vim
+tags
+.netrwhist
