@@ -1,4 +1,5 @@
 *
+!/.cvsignore
 !/.vim
 !/.vim/*
 !/.vim/bundle
