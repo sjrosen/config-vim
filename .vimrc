@@ -1,3 +1,4 @@
+set nocompatible
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 syntax on
@@ -22,3 +23,11 @@ let g:syntastic_check_on_wq = 0
 
 " Delete fugitive buffers on hiding
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+let g:pencil#wrapModeDefault = 'soft'
+
+augroup pencil
+	autocmd!
+	autocmd FileType markdown,mkd	call pencil#init()
+	autocmd FileType text		call pencil#init()
+augroup END
